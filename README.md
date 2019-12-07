@@ -8,7 +8,7 @@ I initially tried to compute the formula for how many edges each graph should ge
 
 [<img src="https://i.imgur.com/MaoMqFU.png">](https://i.imgur.com/)
 
-As you can see I had to use the 'long' variable type because 100000C2 = 4999950000 which excedes the size of an int.
+As you can see I had to use the `long` variable type because 100000C2 = 4999950000 which excedes the size of an int.
 
 
 The next problem I ran into was how to was how to store the data of edges generated
@@ -26,3 +26,19 @@ I make sure that every node has an outgoing edge as instructed, and have a test 
 I also make the assumption that there shouldn't be any edges for one node to itself.
 
 ##2)
+For finding the Strongly Connected Components (SCC), I utilized Kosaraju's algorithm as described here:
+
+https://en.wikipedia.org/wiki/Kosaraju%27s_algorithm
+
+This algorithm utilizes a depth first search to find the SCC's
+
+Here is an example output of my implimentation in the console:
+
+[<img src="https://i.imgur.com/KBNVJQw.png">](https://i.imgur.com/)
+
+You can see the different groups of Strongly Connected Components by each new line after the verification step.
+
+I also added a timer before and after the SCC's are found to time each function. This utilized the `System.nanoTime()` function to get the amount of time it took to run the algorithm.
+
+##3)
+
