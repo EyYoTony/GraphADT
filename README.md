@@ -6,7 +6,7 @@ I ran into a few different challenges when creating the way of holding the infor
 
 I initially tried to compute the formula for how many edges each graph should genererate for each size, but when you scale the equation of nC2 up to 100000 it takes a long time to compute without dynamic programming. I decided to hard code the nC2 amount of edges to each graph like so:
 
-[<img src="https://i.imgur.com/MaoMqFU.png">](https://i.imgur.com/)
+[<img src="https://i.imgur.com/MaoMqFU.png">](https://i.imgur.com/MaoMqFU.png)
 
 As you can see I had to use the `long` variable type because 100000C2 = 4999950000 which excedes the size of an int.
 
@@ -20,7 +20,7 @@ I decided to use an adjacency list instead of a matrix so that you only store th
 
 This is my implimentation of adding the edges randomly to the adacency list:
 
-[<img src="https://i.imgur.com/CDvuvbY.png">](https://i.imgur.com/)
+[<img src="https://i.imgur.com/CDvuvbY.png">](https://i.imgur.com/CDvuvbY.png)
 
 I make sure that every node has an outgoing edge as instructed, and have a test for this to verify that it works every run.
 I also make the assumption that there shouldn't be any edges for one node to itself.
@@ -34,7 +34,7 @@ This algorithm utilizes a depth first search to find the SCC's
 
 Here is an example output of my implimentation in the console:
 
-[<img src="https://i.imgur.com/KBNVJQw.png">](https://i.imgur.com/)
+[<img src="https://i.imgur.com/KBNVJQw.png">](https://i.imgur.com/KBNVJQw.png)
 
 You can see the different groups of Strongly Connected Components by each new line after the verification step.
 
