@@ -1,6 +1,6 @@
-#GraphADT Project
+# GraphADT Project
 
-##1)
+## 1)
 
 I ran into a few different challenges when creating the way of holding the information of the graph.
 
@@ -25,7 +25,7 @@ This is my implimentation of adding the edges randomly to the adacency list:
 I make sure that every node has an outgoing edge as instructed, and have a test for this to verify that it works every run.
 I also make the assumption that there shouldn't be any edges for one node to itself.
 
-##2)
+## 2)
 For finding the Strongly Connected Components (SCC), I utilized Kosaraju's algorithm as described here:
 
 https://en.wikipedia.org/wiki/Kosaraju%27s_algorithm
@@ -40,5 +40,5 @@ You can see the different groups of Strongly Connected Components by each new li
 
 I also added a timer before and after the SCC's are found to time each function. This utilized the `System.nanoTime()` function to get the amount of time it took to run the algorithm.
 
-##3)
+## 3)
 
